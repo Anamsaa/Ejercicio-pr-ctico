@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <link rel=StyleSheet href="styles.css">
+    <link rel=StyleSheet href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> <!--enlaza a librerías con iconos disponibles-->
+
+</head>
+
+<body>
+
+    <header> <!--Permite marcar contenido como cabecera del documento-->      
+        <nav id="navegador"> <!--Sección de enlaces o menú, una barra de navegación-->
+            <ul> <!--Lista desordenada con los enlaces a las páginas-->
+                <li><a href="inici.html">Inicio</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="tablas.html">Tablas</a></li>
+            </ul>
+        </nav> 
+    </header>
+
+    <main> <!--Contenido principal de la página-->
+
+        <h1>TABLA</h1> <!--Título de la página-->
+
+        <div class="tabla">
+            <table border=3> <!--Creación de tabla, especificando el grosor de los bordes.-->
+                <tr> <!--Con esta etiqueta creamos las filas de nuestra tabla-->
+                    <td><b>Ciudad</b></td> <!--<td> Nos permite crear las columnas--> 
+                    <td><b>País</b></td> <!--Utilizamos <b> para resaltar títulos en negrita-->
+                    <td><b>Continente</b></td>           
+                </tr>
+                <tr>
+                    <td>Roma</td>
+                    <td>Italia</td>
+                    <td>Europa</td>
+                </tr>
+                <tr>
+                    <td>El Cairo</td>
+                    <td>Egipto</td>
+                    <td>África</td>
+                </tr>
+                <tr>
+                    <td>Tokio</td> 
+                    <td>Japón</td> 
+                    <td>Asia</td>
+                </tr>
+            </table>  
+        </div>
+    </main>
+
+
+    <footer class="footer"> <!--sirve para marcar el pie de una página-->
+        <div class="contenedor"> 
+            <div class="footer-row">
+
+                <div class="footer-links">
+                    <h4>Contáctame</h4>
+                    <ul>
+                        <li>Ana María Saavedra Yandún</li>
+                        <li><a href="mailto:anmarsy07@gmail.com">Envíame un correo</a></li><!--Enlace a la dirección de correo eléctronico de contacto-->
+                        <li>tel: +34 642 581502</li>   
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="#">Información relevante</a></li>
+                        <li><a href="#">Atención al cliente</a></li>
+                        <li><a href="#">Asesorías</a></li> 
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Redes</h4>
+                    <div class="social-link">
+                        <ul>
+                            <a href="#"><i class= "fab fa-facebook-f"></i></a>
+                            <a href="#"><i class= "fab fa-instagram"></i></a>
+                            <a href="#"><i class= "fab fa-linkedin"></i></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer> 
+</body>
+</html>

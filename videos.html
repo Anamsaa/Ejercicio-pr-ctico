@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+    <link rel=StyleSheet href="styles.css">
+    <link rel=StyleSheet href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> <!--enlaza a librerías con iconos disponibles-->
+
+</head>
+<body>
+
+    <header> <!--Permite marcar contenido como cabecera del documento-->      
+        <nav id="navegador"> <!--Sección de enlaces o menú, una barra de navegación-->
+            <ul> <!--Lista desordenada con los enlaces a las páginas-->
+                <li><a href="inici.html">Inicio</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="tablas.html">Tablas</a></li>
+            </ul>
+        </nav> 
+    </header>
+
+    <main><!--Contenido principal de la página-->
+        <!--Titulo de la página-->
+        <h1>VIDEOS</h1>
+
+        <h3>Jorja Smith (Blue lights)</h3>
+    
+       <!-- Codificación en modo básico -->
+        <video src="Blue lights.mp4" poster="https://i.pinimg.com/736x/5c/91/ed/5c91ed5ed2b29270c1b0addffad5803c.jpg" controls width="300" height="200"></video>
+        <br>
+
+        <h3>Sade (Smooth Operator)</h3>
+        <!-- Codificación en modo avanzado -->
+        <video width="300" height="200" controls>
+            <source src="Smooth Operator.mp4" type="video/mp4">
+            <source src="Smooth-Operator.ogv" type="video/ogg">
+            Su navegador no soporta el contenido multimedia.
+        </video>
+    </main>
+
+    <footer class="footer"> <!--sirve para marcar el pie de una página-->
+        <div class="contenedor"> 
+            <div class="footer-row">
+
+                <div class="footer-links">
+                    <h4>Contáctame</h4>
+                    <ul>
+                        <li>Ana María Saavedra Yandún</li>
+                        <li><a href="mailto:anmarsy07@gmail.com">Envíame un correo</a></li><!--Enlace a la dirección de correo eléctronico de contacto-->
+                        <li>tel: +34 642 581502</li>   
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="#">Información relevante</a></li>
+                        <li><a href="#">Atención al cliente</a></li>
+                        <li><a href="#">Asesorías</a></li> 
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Redes</h4>
+                    <div class="social-link">
+                        <ul>
+                            <a href="#"><i class= "fab fa-facebook-f"></i></a>
+                            <a href="#"><i class= "fab fa-instagram"></i></a>
+                            <a href="#"><i class= "fab fa-linkedin"></i></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer> 
+
+</body>
+</html>

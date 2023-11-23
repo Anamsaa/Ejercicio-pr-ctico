@@ -1,0 +1,156 @@
+/**/
+/*Estilo general en todas las paginas*/
+* {
+    margin: 0; /*Margen de todos los elementos en 0*/
+    padding: 0; /*Eliminamos relleno predeterminado*/
+    list-style: none; /*Elimina las viñetas de las listas*/
+    font-family: sans-serif; /*Establece una fuente Sans-serif para el texto */
+}
+
+/*Body*/
+body {
+    position:relative;
+    padding-bottom: 30px; /*Esta propiedad establece el relleno en la parte inferior del elemento.*/
+    min-height: 100vh; /* Esta propiedad establece la altura mínima del elemento al 100% de la altura de la ventana gráfica */
+}
+
+/*Menú de navegación*/
+
+#navegador li { /* Características del menú de navegación, contenido en un elemnento con el id= "navegador" */
+    display: inline-block; /* Hace que los elementos se muestren como bloques en línea */
+    background: rgb(104, 101, 101); /* Color de fondo */
+    padding: 10px 30px; /* Defino espacio entre el contenido del elemento y su borde */  
+}
+
+#navegador li a {
+    text-decoration: none; /* retiramos la línea en los enlaces */     
+    color: #F0F0F0; /* Color de fondo */
+}    
+
+#navegador li a:hover { /* Propiedades que cambiaran cuando situemos el mouse sobre el elemento */
+    background-color: #F0F0F0;
+    color: #c9ba11e1;
+}
+
+nav { /*Aplica estilos al elemento nav*/
+    background: rgba(201, 186, 17, 0.884);
+    overflow: hidden; /*Evita que el contenido se desborde del elemento*/
+    padding: 20px; 
+    display: flex; /*Utiliza el modelo de diseño flexible*/
+    justify-content: center; /* Las cajas dentro del nav se ubicarán hacia el centro. */
+}
+
+
+/*Contenido*/
+
+main {
+    text-align: center; /*Esta propiedad se utiliza para centrar el texto dentro del elemento*/
+    margin-top: 40px; /*Estas propiedades establecen márgenes*/
+    margin-bottom: 40px; 
+    white-space: pre-wrap; /*define cómo se manejarán los espacios en blanco dentro del elemento.*/
+
+}
+
+.tabla {
+    padding-left: 720px; /*Padding sirve para controlar el espacio interno de un elemento y mejorar la apariencia visual del contenido.*/
+    padding-bottom: 60px; 
+    padding-top: 50px; 
+}
+
+/*Aside*/
+
+aside {
+
+    width: 300px;
+    padding: 30px;
+    margin-top: 70px;
+    background-color: rgba(201, 186, 17, 0.884);
+    z-index: 100; /*se utiliza para controlar el apilamiento de elementos en el eje Z*/
+    display: block;
+}
+
+aside a {
+    text-decoration: none; 
+    color: #1b1701;
+}
+
+aside a:hover {
+    color: white
+}
+
+/*Pie de página*/
+.contenedor { /*Aplica estilo al elemnto de la clase "contenedor"*/
+    max-width: 1200px;
+    margin: 0 auto;   
+ }
+
+ .footer { /*Este selector aplica estilos a la sección de enlaces del pie de página.*/
+    background-color: rgb(104, 101, 101);
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-decoration: none; 
+    padding: 80px 0; 
+    margin-top: auto; 
+}
+
+.footer-row { /*Este selector aplica estilos a la sección de enlaces del pie de página.*/
+    display: flex; /*Utiliza el modelo de diseño flexible.*/
+    flex-wrap: wrap; /*Permite que los elementos se envuelvan a la siguiente línea si no caben en una sola línea.*/
+    justify-content: space-between;
+}
+
+.footer-links{ /*Este selector aplica estilos a la sección de enlaces del pie de página de la clase "footer-links"*/
+    width: 25%; 
+    padding: 0 15px; 
+}
+
+.footer-links h4{ /*Este selector aplica estilos al encabezado dentro de la sección de enlaces.*/
+    font-size: 15px;
+    color: #F0F0F0; 
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-links ul li { /*Este selector aplica estilos a los enlaces dentro de los elementos de lista*/
+    font-size: 18px; 
+    text-decoration: none; /*Elimina cualquier subrayado en los enlaces de la lista.*/
+    color: #BBBBBB;
+    display: block; 
+    margin-bottom: 15px;
+    transition: all .3s ease; /*Aplica una transición suave a todas las propiedades durante 0.3 segundos.*/
+}
+
+.footer-links ul li a { /*Este selector aplica estilos a los enlaces dentro de los elementos de lista de la sección de enlaces.*/
+    font-size: 18px; 
+    text-decoration: none;
+    color: #BBBBBB;
+    display: block; 
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.footer-links ul li a:hover { /*Este selector aplica estilos a los enlaces dentro de los elementos de lista cuando se coloca el mouse sobre ellos.*/
+    color: #FFFFFF; 
+    padding-left: 6px; /*Agrega un espacio adicional a la izquierda del enlace cuando se coloca el mouse sobre él.*/
+}
+
+.social-link a { /*Da características a los elementos de la clase "social-link" de anclaje*/
+    display: inline-block; 
+    min-height: 40px; /*Establece la altura mínima del enlace en 40 píxeles.*/
+    width: 40px; 
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center; 
+    line-height: 40px; /* Establece la altura de línea igual a la altura del enlace.*/
+    border-radius: 50%;/*Aplica un borde redondeado al enlace.*/
+    color: #FFFFFF; 
+    transition: all .5s ease;
+
+}
+
+.social-link a:hover { /*Aplica estilos a los enlaces de redes sociales cuando se coloca el mouse sobre ellos. */
+    background-color: #a18a18;
+}
